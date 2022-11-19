@@ -19,6 +19,18 @@ A revised version of FRED from 1972 used multiple open collector NAND gates (740
 
 Some of the original chips used in FRED are obsolete and difficult to find. This includes the 74181 ALU and the 7489 16 x 16-bit memory. The simulation uses these original devices, but future versions will use modern, available components.
 
+Where the 7404 hex inverter was used I have substituted the 74540 octal inverter.
+
+The 74154 1 of 16 decoder is also obsolete, so I have substituted a pair of 74138, 1 of 8 decoders.
+
+The original FRED used 7475 and 74175 quad flipflops. In some cases I have substituted these for the more modern 74173.
+
+About 25% of the chips used in FRED are basic gates, NAND, NOR, AND, OR. and inverters, 7400, 7401, 7402, 7404, 7408, 7410, 7420, 7427, 7430. They are used for basic control logic and interfacing with the data bus. Modern Tristae devices could reduce a lot of this random logic.
+
+The 74181 4-bit ALU is virtually obsolete, but included here for historical accuracy. A future version will use the ALU based on multiplexers, as used on the Gigatron TTL Computer. Credit to Dieter Muller for this economical ALU design.
+
+
+
 I have added the following TTL devices to the "Digital" library. Please download these and add them to your library files.
 
 7475  Quad flipflop
