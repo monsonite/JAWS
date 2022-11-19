@@ -23,7 +23,6 @@ I have added the following TTL devices to the "Digital" library. Please download
 
 7475  Quad flipflop
 7495  4 bit shift register
-74175 4 bit register
-
+74175 Quad D-type flipflops with clear.
 
 
