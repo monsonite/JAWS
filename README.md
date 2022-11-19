@@ -9,3 +9,21 @@ Fortunately, Weisbecker documented his project well, and full hand drawn schemat
 I have taken these schematics and created a reproduction of the FRED CPU, that will run in the "Digital" simulator by H. Neemann - available here on GitHub.
 
 It's a work in progress, and I expect to have to correct numerous mistakes. If you are an 1802 enthusiast or even a complete newcomer to CPU architectures, I hope that these simulation files will be of use to you.
+
+Why Jaws?  Joseph A. Weisbecker - SuperHero.
+
+
+The original FRED from 1971 used 74151 multiplexers to allow data from several different sources to be put onto the databus.
+
+A revised version of FRED from 1972 used multiple open collector NAND gates (7401) to perform the same function. My simulation used this latter approach.
+
+Some of the original chips used in FRED are obsolete and difficult to find. This includes the 74181 ALU and the 7489 16 x 16-bit memory. The simulation uses these original devices, but future versions will use modern, available components.
+
+I have added the following TTL devices to the "Digital" library. Please download these and add them to your library files.
+
+7475  Quad flipflop
+7495  4 bit shift register
+74175 4 bit register
+
+
+
