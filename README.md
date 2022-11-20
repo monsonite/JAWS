@@ -29,7 +29,16 @@ About 25% of the chips used in FRED are basic gates, NAND, NOR, AND, OR. and inv
 
 The 74181 4-bit ALU is virtually obsolete, but included here for historical accuracy. A future version will use the ALU based on multiplexers, as used on the Gigatron TTL Computer. Credit to Dieter Muller for this economical ALU design.
 
+#Circuit Description
 
+There are 4 main parts to Joseph Weisbecker's design.  
+
+1.  The register file, consisting of sixteen, 16-bit registers that can be incremented or decremented with an up/down counter.
+2.  The 4-bit system registers I (instruction), N, P and X.
+3.  The ALU. A pair of 74181s followed by a pair of 7495 shift registers. Much of this is obsolete, and can be replaced with an ALU based on multiplexers - as designed by Dieter Muller and used in the Gigatron.
+4.  The control logic.  This is about 25 or 30 basic gate packages often caled "random" logic.  7400, 7402, 7404, 7408, 7410, 7420, 7427, 7430.
+
+The current design stands at about 90 packages. 
 
 I have added the following TTL devices to the "Digital" library. Please download these and add them to your library files.
 
